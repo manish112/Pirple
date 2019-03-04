@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551736532 source:d:\ms\cpp_workground\prices\main.cpp
+	<iostream>
+	<iomanip>
+
