@@ -3,6 +3,13 @@
 
 using namespace std;
 
+void print_amount(const char *message, float amount)
+{
+
+    cout<<message<<right<<setw(15)<<setprecision(2)<<amount<<'\n';
+
+}
+
 int main()
 {
     double price1, price2, price3, total;
@@ -12,14 +19,19 @@ int main()
     cin>>price2;
     cout<<"enter a price"<<endl;
     cin>>price3;
+    cout<<endl<<endl;
 
     total=price1+price2+price3;
 
-     cout << setiosflags(ios::fixed);
+    cout << setiosflags(ios::fixed);
 
-cout<<"Price 1 is "<<setprecision(2)<<setw(10)<<right<<price1<<endl;
-cout<<"Price 2 is "<<setprecision(2)<<setw(10)<<right<<price2<<endl;
-cout<<"Price 3 is "<<setprecision(2)<<setw(10)<<right<<price3<<endl;
-cout<<"Total price: "<<setprecision(2)<<setw(7)<<right<<total<<endl;
+    print_amount("Price 1 is   ", price1);
+    print_amount("Price 2 is   ", price2);
+    print_amount("Price 3 is   ", price3);
+    cout<<endl;
+    print_amount("Total price: ", total);
+
     return 0;
 }
+
+
