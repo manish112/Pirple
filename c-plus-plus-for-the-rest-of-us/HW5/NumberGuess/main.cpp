@@ -27,7 +27,7 @@ int main()
         if(option=='y' || option=='Y')
         {
             cout<<"I guessed it in "<<attempts<<" attempts";
-            break;
+            return 0;
         }
         else if (option=='h' || option=='H')
         {
