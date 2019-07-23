@@ -39,13 +39,13 @@ int main()
         }
 
 
-        /*Check of the game needs to beterminated*/
+        /*Check if the game needs to be terminated*/
         if(flag==1)
         {
             cout<<"\nPlayer "<<currentPlayer<<" "<<message;
             break;
         }
-
+        /*Maximum tries exhausted*/
         if(i==9)
         {
             cout<<"\nDraw. Nobody Wins.\n\n";
